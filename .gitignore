@@ -4,5 +4,8 @@ node_modules/
 .vscode
 .idea
 Thumbs.db
+/**/Thumbs.db
 npm-debug.log*
 dist
+/**/*.psd
+/**/.DS_Store

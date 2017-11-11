@@ -1,8 +1,2 @@
-    @import "header";
-    * {
-        box-sizing: border-box;
-    }
-
-    html {
-        display: flex;
-    }
+    @import 'Base/index';
+    @import 'Header/index';

@@ -1,6 +1,5 @@
 {
-  "extends": "stylelint-config-standard",
- "plugins": [
+  "plugins": [
     "stylelint-declaration-use-variable"
   ],
   "rules": {
@@ -45,7 +44,7 @@
     "selector-pseudo-element-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "value-no-vendor-prefix": true,
-    "at-rule-no-unknown": [ true, {
+    "at-rule-no-unknown": [true, {
       "ignoreAtRules": [
         "include",
         "mixin",

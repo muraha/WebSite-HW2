@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/muraha/WebSite-HW2#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.6",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylelint": "^5.0.0",
+    "stylelint": "^8.2.0",
+    "stylelint-declaration-use-variable": "^1.6.0",
+    "stylelint-scss": "^2.1.0"
   }
 }

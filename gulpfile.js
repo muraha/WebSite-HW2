@@ -22,10 +22,10 @@ let gulp = require('gulp'),
 
 gulp.task('scss', () =>
     gulp
-    .src('app/scss/style.scss')
+    .src('app/scss/index.scss')
     .pipe(sourcemaps.init())
     .pipe(scss().on('error', scss.logError))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('.'))
     .pipe(postcss(
         [
             prefix({

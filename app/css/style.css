@@ -124,3 +124,74 @@ table {
 
 html {
   background-color: #191e3f; }
+
+body {
+  font-size: 62.5%; }
+
+header {
+  height: 100vh;
+  background: url("../img/Header/mountains header.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+
+#logo {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 50px; }
+
+#logo img {
+  width: 80px; }
+
+#header-moto {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 5em;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; }
+
+#nav {
+  position: relative; }
+
+.burger {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.burger span {
+  height: 3px;
+  background: #ffffff;
+  display: block;
+  margin: 3px 0; }
+
+#nav ul {
+  position: absolute;
+  top: 0px;
+  right: 10%; }
+
+#nav ul li {
+  margin-right: 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2em; }
+
+#menu-change:checked ~ ul {
+  display: flex;
+  flex-direction: row-reverse; }
+
+#menu-change:not(:checked) ~ ul {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

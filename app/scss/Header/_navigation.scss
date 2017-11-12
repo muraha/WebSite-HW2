@@ -1,0 +1,44 @@
+#nav {
+    position: relative;
+}
+
+.burger {
+    position: absolute;
+    top: -40px;
+    right: 10%;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burger span {
+    height: 3px;
+    background: $white;
+    display: block;
+    margin: 3px 0;
+}
+
+#nav ul {
+    position: absolute;
+    top: 0px;
+    right: 10%;
+}
+
+#nav ul li {
+    margin-right: 10px;
+    color: $white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+#menu-change:checked~ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#menu-change:not(:checked)~ul {
+    display: none;
+}

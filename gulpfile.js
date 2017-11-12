@@ -23,15 +23,14 @@ let gulp = require('gulp'),
 gulp.task('scss', () =>
     gulp
     .src('app/scss/style.scss')
-    // .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(scss().on('error', scss.logError))
-    // .pipe(sourcemaps.write('.'))
     .pipe(postcss(
         [
-            prefix({
-                browsers: ['last 2 versions'],
-                cascade: false
-            }),
+            // prefix({
+            //     browsers: ['last 2 versions'],
+            //     cascade: false
+            // }),
             lint({
                 failAfterError: true,
                 reporters: [{
@@ -42,23 +41,12 @@ gulp.task('scss', () =>
             })
         ]
     ))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
         stream: true
     }))
 );
-
-// gulp.task('prefix', () =>
-//     gulp
-//     .src('app/css/*.css')
-//     .pipe(sourcemaps.init())
-//     .pipe(postcss([prefix({
-//         browsers: ['last 2 versions'],
-//         cascade: false
-//     })]))
-//     .pipe(sourcemaps.write('.'))
-//     .pipe(gulp.dest('app/css'))
-// );
 
 gulp.task('liveserver', () =>
     browserSync.init({
@@ -71,6 +59,7 @@ gulp.task('liveserver', () =>
 );
 gulp.task('watch', function () {
     gulp.watch('app/scss/**/*.scss', ['scss']);
+    gulp.watch('app/scss/**/*.scss', browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload)
 });
 

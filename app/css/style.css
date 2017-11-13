@@ -1,1 +1,213 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  background-color: #191e3f; }
+
+body {
+  font-size: 62.5%; }
+
+header {
+  height: 100vh;
+  background: url("../img/Header/mountains header.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+
+#logo {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 50px; }
+
+#logo img {
+  width: 80px; }
+
+#header-moto {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 5em;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; }
+
+#nav {
+  position: relative; }
+
+.burger {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  width: 30px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.burger span {
+  height: 3px;
+  background: #ffffff;
+  display: block;
+  margin: 3px 0; }
+
+#nav ul {
+  position: absolute;
+  top: -20px;
+  right: 10%; }
+
+#nav ul li {
+  margin-bottom: 10px;
+  color: #ffffff;
+  animation: alfa, 1s, 2s, ease;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2em; }
+
+#menu-change:checked ~ ul {
+  display: flex;
+  flex-direction: column; }
+
+#menu-change:checked ~ .burger span:last-child {
+  animation: nav-expand, 2s, linear; }
+
+#menu-change:not(:checked) ~ ul {
+  display: none; }
+
+@keyframes nav-expand {
+  from {
+    padding-top: 3px; }
+  to {
+    padding-top: 170px; } }
+
+@keyframes alfa {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */

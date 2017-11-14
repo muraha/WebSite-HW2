@@ -1,23 +1,9 @@
-.mask {
-    background-color: #191e3f;
-    box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.451);
-    position: absolute;
-    left: 540px;
-    top: 1185px;
-    width: 660px;
-    height: 660px;
-    z-index: 13;
-}
-
 .mountains {
-    background-image: url("mountains.png");
-    opacity: 0.631;
-    position: absolute;
-    left: 374px;
-    top: 1212px;
-    width: 850px;
-    height: 634px;
-    z-index: 14;
+    background: url("../img/Mission/mountains.png") no-repeat;
+    background-position: top left;
+    box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.451);
+    width: 660px;
+    height: 630px;
 }
 
 //   .mission {

@@ -1,9 +1,18 @@
 header {
 	height: 100vh;
-	background: url("../img/Header/mountains header.png") no-repeat;
+	background: url("../img/Header/Layer.png") no-repeat;
 	background-size: cover; // background-attachment: fixed;
 	background-position: top;
 	position: relative;
+}
+
+.head-mask {
+	background-color: rgba(25, 30, 63, 0.749);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0
 }
 
 #logo {

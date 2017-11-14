@@ -60,8 +60,7 @@ gulp.task('liveserver', () =>
 );
 gulp.task('watch', function () {
     gulp.watch('app/scss/**/*.scss', ['scss']);
-    gulp.watch('app/scss/**/*.scss', browserSync.reload);
-    gulp.watch('app/*.html', browserSync.reload)
+    gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['liveserver', 'scss', 'watch']);
+gulp.task('default', ['scss', 'liveserver', 'watch']);

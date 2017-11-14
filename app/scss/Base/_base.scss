@@ -1,6 +1,9 @@
  $white: #ffffff;
  $blue: #191e3f;
- $shadow:#333333;
+ $shadow:rgba(0, 0, 0, 0.451);
+ $box-shadow: (0px 178px 152px 0px rgba(0, 0, 0, 0.451));
+ $font-r: ('Raleway', sans-serif);
+ $font-y: ('Yantramanav', sans-serif);
  html {
      background-color: #191e3f;
  }

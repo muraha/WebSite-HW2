@@ -29,40 +29,32 @@
 #nav ul li {
     margin-bottom: 10px;
     color: $white;
-    animation: alfa, 1s, 2s, ease;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 2em;
 }
 
+.burger span:last-child {
+    transition-duration: 0.5s
+}
+
+
+/*checked - unchecked states of burger*/
+
 #menu-change:checked {
     &~ul {
         display: flex;
         flex-direction: column;
+        opacity: 1;
+        transition: opacity 1s;
     }
     &~.burger span:last-child {
-        animation: nav-expand, 2s, linear;
+        margin-top: 170px;
     }
 }
 
 #menu-change:not(:checked)~ul {
-    display: none;
-}
-
-@keyframes nav-expand {
-    from {
-        padding-top: 3px;
-    }
-    to {
-        padding-top: 170px;
-    }
-}
-
-@keyframes alfa {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    opacity: 0; // display: none;
+    transition-delay: 0s;
+    transition: opacity 0.1s;
 }

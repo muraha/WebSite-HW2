@@ -139,6 +139,7 @@ header {
   display: inline-block;
   position: relative;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   padding-top: 50px; }
 
@@ -153,6 +154,7 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap; }
 
@@ -165,8 +167,15 @@ header {
   right: 10%;
   width: 30px;
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start; }
 
 .burger span {
@@ -183,31 +192,56 @@ header {
 #nav ul li {
   margin-bottom: 10px;
   color: #ffffff;
-  animation: alfa, 1s, 2s, ease;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 2em; }
 
+.burger span:last-child {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+/*checked - unchecked states of burger*/
 #menu-change:checked ~ ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
 
 #menu-change:checked ~ .burger span:last-child {
-  animation: nav-expand, 2s, linear; }
+  margin-top: 170px; }
 
 #menu-change:not(:checked) ~ ul {
-  display: none; }
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s; }
 
-@keyframes nav-expand {
-  from {
-    padding-top: 3px; }
-  to {
-    padding-top: 170px; } }
+.mask {
+  background-color: #191e3f;
+  -webkit-box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.451);
+  box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.451);
+  position: absolute;
+  left: 540px;
+  top: 1185px;
+  width: 660px;
+  height: 660px;
+  z-index: 13; }
 
-@keyframes alfa {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.mountains {
+  background-image: url("mountains.png");
+  opacity: 0.631;
+  position: absolute;
+  left: 374px;
+  top: 1212px;
+  width: 850px;
+  height: 634px;
+  z-index: 14; }
 
 /*# sourceMappingURL=style.css.map */

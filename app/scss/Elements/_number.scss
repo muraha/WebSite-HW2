@@ -1,0 +1,19 @@
+.number {
+   display: inline-block;
+}
+
+.number-num {
+   font-size: 286px;
+   font-family: $font-y;
+   color: rgba(255, 255, 255, 0.012);
+   line-height: 1.2;
+   text-align: left;
+}
+
+.number-lable {
+   font-size: 19px;
+   font-family: $font-r;
+   color: rgb(255, 255, 255);
+   line-height: 1.2;
+   transform: rotate(-90deg) // transform: matrix( 0, -1.77006588059939, 1.80146147651326, 0, 0, 0);
+}

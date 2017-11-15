@@ -15,16 +15,15 @@ header {
 	right: 0
 }
 
-#logo {
+.header-logo {
 	display: inline-block;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	padding-top: 50px;
-}
-
-#logo img {
-	width: 80px;
+	& img {
+		width: 80px;
+	}
 }
 
 #header-moto {

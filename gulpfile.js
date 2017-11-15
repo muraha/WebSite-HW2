@@ -26,14 +26,14 @@ gulp.task('scss', () =>
     .src('app/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(scss().on('error', scss.logError))
-    .pipe(lint({
-        failAfterError: false,
-        reporters: [{
-            formatter: 'verbose',
-            console: true
-        }],
-        debug: false
-    }))
+    // .pipe(lint({
+    //     failAfterError: false,
+    //     reporters: [{
+    //         formatter: 'verbose',
+    //         console: true
+    //     }],
+    //     debug: false
+    // }))
     .pipe(postcss(
         [
             prefix({

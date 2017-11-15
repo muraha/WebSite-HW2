@@ -1,4 +1,4 @@
-#nav {
+.nav {
     position: relative;
 }
 
@@ -20,13 +20,15 @@
     margin: 3px 0;
 }
 
-#nav ul {
+.nav ul {
     position: absolute;
     top: -20px;
     right: 10%;
 }
 
-#nav ul li {
+.nav ul li {
+    position: relative;
+    left: 25px;
     margin-bottom: 10px;
     color: $white;
     font-family: 'Raleway', sans-serif;
@@ -45,6 +47,7 @@
     &~ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
         opacity: 1;
         transition: opacity 1s;
     }
@@ -55,6 +58,6 @@
 
 #menu-change:not(:checked)~ul {
     opacity: 0; // display: none;
-    transition-delay: 0s;
+    transition-delay: opacity 0s;
     transition: opacity 0.1s;
 }

@@ -143,16 +143,15 @@ header {
   bottom: 0;
   right: 0; }
 
-#logo {
+.header-logo {
   display: inline-block;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   padding-top: 50px; }
-
-#logo img {
-  width: 80px; }
+  .header-logo img {
+    width: 80px; }
 
 #header-moto {
   font-family: "Raleway", sans-serif;
@@ -166,7 +165,7 @@ header {
   transform: translate(-50%, -50%);
   white-space: nowrap; }
 
-#nav {
+.nav {
   position: relative; }
 
 .burger {
@@ -192,12 +191,14 @@ header {
   display: block;
   margin: 3px 0; }
 
-#nav ul {
+.nav ul {
   position: absolute;
   top: -20px;
   right: 10%; }
 
-#nav ul li {
+.nav ul li {
+  position: relative;
+  left: 25px;
   margin-bottom: 10px;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
@@ -217,6 +218,9 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s; }
@@ -226,10 +230,28 @@ header {
 
 #menu-change:not(:checked) ~ ul {
   opacity: 0;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+  -webkit-transition-delay: opacity 0s;
+  transition-delay: opacity 0s;
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s; }
+
+.number {
+  display: inline-block; }
+
+.number-num {
+  font-size: 286px;
+  font-family: "Yantramanav", sans-serif;
+  color: rgba(255, 255, 255, 0.012);
+  line-height: 1.2;
+  text-align: left; }
+
+.number-lable {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  line-height: 1.2;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .mountains {
   background: url("../img/Mission/mountains.png") no-repeat;
@@ -238,5 +260,13 @@ header {
   box-shadow: 0px 178px 152px 0px rgba(0, 0, 0, 0.451);
   width: 660px;
   height: 630px; }
+
+.mission-text {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: left;
+  width: 600px; }
 
 /*# sourceMappingURL=style.css.map */

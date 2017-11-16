@@ -1,13 +1,14 @@
- $white: #ffffff;
- $blue: #191e3f;
- $shadow:rgba(0, 0, 0, 0.451);
- $box-shadow: (0px 178px 152px 0px rgba(0, 0, 0, 0.451));
- $font-r: ('Raleway', sans-serif);
- $font-y: ('Yantramanav', sans-serif);
- html {
-     background-color: $blue;
- }
+$white: #ffffff;
+$blue: #191e3f;
+$shadow:rgba(0, 0, 0, 0.451);
+$box-shadow: (0 178px 152px 0px rgba(0, 0, 0, 0.451));
+$font-r: ('Raleway', sans-serif);
+$font-y: ('Yantramanav', sans-serif);
 
- body {
-     font-size: 62.5%;
- }
+html {
+    background-color: $blue;
+}
+
+body {
+    font-size: 62.5%;
+}

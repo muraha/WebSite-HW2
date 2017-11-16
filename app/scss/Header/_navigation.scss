@@ -43,20 +43,20 @@
 
 /*checked - unchecked states of burger*/
 
-#menu-change:checked {
-    &~ul {
+.menu-change:checked {
+    &>ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         opacity: 1;
         transition: opacity 1s;
     }
-    &~.burger span:last-child {
+    &>.burger span:last-child {
         margin-top: 170px;
     }
 }
 
-#menu-change:not(:checked)~ul {
+.menu-change:not(:checked)~ul {
     opacity: 0; // display: none;
     transition-delay: opacity 0s;
     transition: opacity 0.1s;

@@ -2,24 +2,23 @@ let gulp = require('gulp'),
     scss = require('gulp-sass'),
     smap = require('gulp-sourcemaps'),
     prefix = require('autoprefixer'),
-    // lint = require('stylelint'),
     lint = require('gulp-stylelint'),
     postcss = require('gulp-postcss'),
     sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync');
 
 
-// gulp.task('lint', () =>
-//     gulp.src( /*base.scss + */ 'app/scss/style.scss')
-//     .pipe(lint({
-//         failAfterError: true,
-//         reporters: [{
-//             formatter: 'verbose',
-//             console: true
-//         }],
-//         debug: true
-//     }))
-// );
+gulp.task('lint', () =>
+    gulp.src('app/scss/**/*.scss')
+    .pipe(lint({
+        failAfterError: true,
+        reporters: [{
+            formatter: 'verbose',
+            console: true
+        }],
+        debug: true
+    }))
+);
 
 gulp.task('scss', () =>
     gulp

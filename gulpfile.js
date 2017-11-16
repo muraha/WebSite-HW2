@@ -25,14 +25,6 @@ gulp.task('scss', () =>
     .src('app/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(scss().on('error', scss.logError))
-    // .pipe(lint({
-    //     failAfterError: false,
-    //     reporters: [{
-    //         formatter: 'verbose',
-    //         console: true
-    //     }],
-    //     debug: false
-    // }))
     .pipe(postcss(
         [
             prefix({
@@ -53,8 +45,6 @@ gulp.task('liveserver', () =>
         server: {
             baseDir: "app"
         },
-        // tunnel: true,
-        // host: 'localhost'
     })
 );
 gulp.task('watch', function () {

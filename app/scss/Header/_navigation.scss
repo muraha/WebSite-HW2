@@ -1,63 +1,65 @@
 .nav {
-    position: relative;
+  position: relative;
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .burger {
-    position: absolute;
-    top: -40px;
-    right: 10%;
-    width: 30px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.burger span {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: pointer;
+  & span {
     height: 3px;
     background: $white;
     display: block;
     margin: 3px 0;
+  }
 }
 
 .nav ul {
-    position: absolute;
-    top: -20px;
-    right: 10%;
-}
-
-.nav ul li {
+  position: absolute;
+  top: -20px;
+  right: 10%;
+  transform: translateX(25px);
+  & li {
     position: relative;
-    left: 25px;
     margin-bottom: 10px;
     color: $white;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-r;
     font-weight: 100;
-    font-size: 2em;
-}
-
-.burger span:last-child {
-    transition-duration: 0.5s
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }
 
 
 /*checked - unchecked states of burger*/
 
-.menu-change:checked {
-    &>ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 1;
-        transition: opacity 1s;
-    }
-    &>.burger span:last-child {
-        margin-top: 170px;
-    }
+.burger span:first-child {
+  transition-duration: 0.5s;
 }
 
-.menu-change:not(:checked)~ul {
-    opacity: 0; // display: none;
-    transition-delay: opacity 0s;
-    transition: opacity 0.1s;
+.menu-change:not(:checked)+ul {
+  display: none; // opacity: 0;
+  // transition: opacity 0.1s;
+}
+
+.menu-change:checked {
+  &+.burger span:first-child {
+    margin-bottom: 17rem;
+  }
+  &+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s;
+  }
 }

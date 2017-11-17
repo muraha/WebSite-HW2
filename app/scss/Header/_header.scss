@@ -1,40 +1,39 @@
 header {
-    height: 100vh;
-    background: url("../img/Header/Layer.png") no-repeat;
-    background-size: cover; // background-attachment: fixed;
-    background-position: top;
-    position: relative;
+  height: 100vh;
+  background: url("../img/Header/Layer.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
 .head-mask {
-    background-color: rgba(25, 30, 63, 0.749);
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+  background-color: $blue-mask;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .header-logo {
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 50px;
-
-    & img {
-        width: 80px;
-    }
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 50px;
+  & img {
+    width: 80px;
+  }
 }
 
-#header-moto {
-    font-family: $font-r;
-    font-weight: 100;
-    font-size: 5em;
-    color: $white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+.header-moto {
+  font-family: $font-r;
+  font-weight: 100;
+  font-size: 5em;
+  color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }

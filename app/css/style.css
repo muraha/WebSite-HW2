@@ -174,16 +174,6 @@ header {
   top: -40px;
   right: 10%;
   width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   cursor: pointer; }
   .burger span {
     height: 3px;
@@ -195,29 +185,8 @@ header {
   position: absolute;
   top: -20px;
   right: 10%;
-  -webkit-transform: translateX(25px);
-  transform: translateX(25px); }
-  .nav ul li {
-    position: relative;
-    margin-bottom: 10px;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
-    cursor: pointer; }
-
-/*checked - unchecked states of burger*/
-.burger span:first-child {
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
-
-.menu-change:not(:checked) + ul {
-  display: none; }
-
-.menu-change:checked + .burger span:first-child {
-  margin-bottom: 17rem; }
-
-.menu-change:checked + ul {
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,9 +197,33 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s; }
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s linear;
+  transition: height 0.3s linear; }
+  .nav ul li {
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    cursor: pointer; }
+
+/*checked - unchecked states of burger*/
+.menu-change:not(:checked) ~ .burger span:first-child {
+  -webkit-transition: 0.3s 0.05s linear;
+  transition: 0.3s 0.05s linear; }
+
+.menu-change:checked ~ .burger span:first-child {
+  margin-bottom: 17rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear; }
+
+.menu-change:checked ~ ul {
+  height: 17rem;
+  -webkit-transition: 0.3s 0.05s linear;
+  transition: 0.3s 0.05s linear; }
 
 .element-number {
   display: inline-block; }

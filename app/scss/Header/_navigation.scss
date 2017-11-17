@@ -11,9 +11,6 @@
   top: -40px;
   right: 10%;
   width: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   cursor: pointer;
   & span {
     height: 3px;
@@ -27,7 +24,15 @@
   position: absolute;
   top: -20px;
   right: 10%;
-  transform: translateX(25px);
+  transform: translateX(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: (height) 0.3s linear;
+      
+
   & li {
     position: relative;
     margin-bottom: 10px;
@@ -39,27 +44,21 @@
   }
 }
 
-
 /*checked - unchecked states of burger*/
 
-.burger span:first-child {
-  transition-duration: 0.5s;
-}
-
-.menu-change:not(:checked)+ul {
-  display: none; // opacity: 0;
-  // transition: opacity 0.1s;
+.menu-change:not(:checked) {
+  &~.burger span:first-child {
+  transition: 0.3s 0.05s linear;
+  }
 }
 
 .menu-change:checked {
-  &+.burger span:first-child {
+  &~.burger span:first-child {
     margin-bottom: 17rem;
+    transition: 0.3s linear;
   }
-  &+ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 1s;
+  &~ul {
+    height: 17rem;
+    transition: 0.3s 0.05s linear;
   }
 }

@@ -123,91 +123,172 @@ table {
   border-spacing: 0; }
 
 html {
-  background-color: #191e3f; }
-
-body {
+  background-color: #191e3f;
   font-size: 62.5%; }
 
 header {
   height: 100vh;
-  background: url("../img/Header/mountains header.png") no-repeat;
+  background: url("../img/Header/Layer.png") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative; }
 
-#logo {
+.head-mask {
+  background-color: rgba(25, 30, 63, 0.749);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+
+.header-logo {
   display: inline-block;
   position: relative;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   padding-top: 50px; }
+  .header-logo img {
+    width: 80px; }
 
-#logo img {
-  width: 80px; }
-
-#header-moto {
-  font-family: 'Raleway', sans-serif;
+.header-moto {
+  font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-size: 5em;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap; }
 
-#nav {
+.nav {
   position: relative; }
+  .nav a {
+    color: inherit;
+    text-decoration: none; }
 
 .burger {
   position: absolute;
   top: -40px;
   right: 10%;
   width: 30px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  cursor: pointer; }
+  .burger span {
+    height: 3px;
+    background: white;
+    display: block;
+    margin: 3px 0; }
 
-.burger span {
-  height: 3px;
-  background: #ffffff;
-  display: block;
-  margin: 3px 0; }
-
-#nav ul {
+.nav ul {
   position: absolute;
   top: -20px;
-  right: 10%; }
-
-#nav ul li {
-  margin-bottom: 10px;
-  color: #ffffff;
-  animation: alfa, 1s, 2s, ease;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 2em; }
-
-#menu-change:checked ~ ul {
+  right: 10%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s linear;
+  transition: height 0.3s linear; }
+  .nav ul li {
+    position: relative;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    cursor: pointer; }
 
-#menu-change:checked ~ .burger span:last-child {
-  animation: nav-expand, 2s, linear; }
+/*checked - unchecked states of burger*/
+.menu-change:not(:checked) ~ .burger span:first-child {
+  -webkit-transition: 0.3s 0.05s linear;
+  transition: 0.3s 0.05s linear; }
 
-#menu-change:not(:checked) ~ ul {
-  display: none; }
+.menu-change:checked ~ .burger span:first-child {
+  margin-bottom: 17rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear; }
 
-@keyframes nav-expand {
-  from {
-    padding-top: 3px; }
-  to {
-    padding-top: 170px; } }
+.menu-change:checked ~ ul {
+  height: 17rem;
+  -webkit-transition: 0.3s 0.05s linear;
+  transition: 0.3s 0.05s linear; }
 
-@keyframes alfa {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.element-number {
+  display: inline-block; }
+
+.element-number-num {
+  position: relative;
+  font-size: 30rem;
+  font-family: "Yantramanav", sans-serif;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1.2;
+  letter-spacing: -2rem;
+  -webkit-transform: scaleY(0.95);
+  transform: scaleY(0.95); }
+
+.element-number-label {
+  position: absolute;
+  font-size: 1.9rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: 0;
+  -webkit-transform: rotate(-90deg) scale(1.8) translate(20%, -70%);
+  transform: rotate(-90deg) scale(1.8) translate(20%, -70%);
+  top: 50%;
+  left: 50%; }
+
+.mission {
+  height: 100vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.mission-number {
+  padding-top: 12rem;
+  max-width: 25rem; }
+
+.mission-mountains {
+  background: url("../img/Mission/mountains.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0 17.8rem 15.2rem 0 rgba(0, 0, 0, 0.451);
+  box-shadow: 0 17.8rem 15.2rem 0 rgba(0, 0, 0, 0.451);
+  width: 66rem;
+  max-height: 63rem;
+  margin: 3rem 0 -3rem 0rem; }
+
+.mission-text {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  line-height: 1.2;
+  text-align: left;
+  max-width: 48rem;
+  padding-top: 24rem;
+  margin-left: -20rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
 /*# sourceMappingURL=style.css.map */

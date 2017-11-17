@@ -1,0 +1,25 @@
+.element-number {
+  display: inline-block;
+}
+
+.element-number-num {
+  position: relative;
+  font-size: 30rem;
+  font-family: $font-y;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1.2;
+  letter-spacing: -2rem;
+  transform: scaleY(0.95);
+}
+
+.element-number-label {
+  position: absolute;
+  font-size: 1.9rem;
+  font-family: $font-r;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  letter-spacing: 0;
+  transform: rotate(-90deg) scale(1.8) translate(20%, -70%);
+  top: 50%;
+  left: 50%;
+}

@@ -1,68 +1,66 @@
-#nav {
-    position: relative;
+.nav {
+  position: relative;
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .burger {
-    position: absolute;
-    top: -40px;
-    right: 10%;
-    width: 30px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+  position: absolute;
+  top: -40px;
+  right: 10%;
+  width: 30px;
+  cursor: pointer;
 
-.burger span {
+  & span {
     height: 3px;
     background: $white;
     display: block;
     margin: 3px 0;
+  }
 }
 
-#nav ul {
-    position: absolute;
-    top: -20px;
-    right: 10%;
-}
+.nav ul {
+  position: absolute;
+  top: -20px;
+  right: 10%;
+  transform: translateX(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: (height) 0.3s linear;
 
-#nav ul li {
+  & li {
+    position: relative;
     margin-bottom: 10px;
     color: $white;
-    animation: alfa, 1s, 2s, ease;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-r;
     font-weight: 100;
-    font-size: 2em;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }
 
-#menu-change:checked {
-    &~ul {
-        display: flex;
-        flex-direction: column;
-    }
-    &~.burger span:last-child {
-        animation: nav-expand, 2s, linear;
-    }
+/* checked - unchecked states of burger */
+
+.menu-change:not(:checked) {
+  & ~ .burger span:first-child {
+    transition: 0.3s 0.05s linear;
+  }
 }
 
-#menu-change:not(:checked)~ul {
-    display: none;
-}
+.menu-change:checked {
+  & ~ .burger span:first-child {
+    margin-bottom: 17rem;
+    transition: 0.3s linear;
+  }
 
-@keyframes nav-expand {
-    from {
-        padding-top: 3px;
-    }
-    to {
-        padding-top: 170px;
-    }
-}
-
-@keyframes alfa {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  & ~ ul {
+    height: 17rem;
+    transition: 0.3s 0.05s linear;
+  }
 }

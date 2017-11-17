@@ -1,5 +1,6 @@
 .nav {
   position: relative;
+
   & a {
     color: inherit;
     text-decoration: none;
@@ -12,6 +13,7 @@
   right: 10%;
   width: 30px;
   cursor: pointer;
+
   & span {
     height: 3px;
     background: $white;
@@ -31,7 +33,6 @@
   overflow: hidden;
   height: 0;
   transition: (height) 0.3s linear;
-      
 
   & li {
     position: relative;
@@ -44,20 +45,21 @@
   }
 }
 
-/*checked - unchecked states of burger*/
+/* checked - unchecked states of burger */
 
 .menu-change:not(:checked) {
-  &~.burger span:first-child {
-  transition: 0.3s 0.05s linear;
+  & ~ .burger span:first-child {
+    transition: 0.3s 0.05s linear;
   }
 }
 
 .menu-change:checked {
-  &~.burger span:first-child {
+  & ~ .burger span:first-child {
     margin-bottom: 17rem;
     transition: 0.3s linear;
   }
-  &~ul {
+
+  & ~ ul {
     height: 17rem;
     transition: 0.3s 0.05s linear;
   }

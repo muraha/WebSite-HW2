@@ -9,30 +9,99 @@
 	transform: translate(-50%, -50%);
 }
 
-.team-number {}
+@mixin member($b, $bs, $bp, $p, $w, $h, $bsh) {
+	background: $b;
+	background-size: $bs;
+	background-position: $bp;
+	position: $p;
+	width: $w;
+	height: $h;
+	box-shadow: $bsh
+}
 
-.portrait {}
+.member1 {
+	@include member(url("../img/Team/photo1.png") no-repeat,
+	cover,
+	top,
+	relative,
+	60rem,
+	60rem,
+	$box-shadow);
+}
 
-.bio:nth-child(n) {
+.member2 {
+	@include member(url("../img/Team/photo2.png") no-repeat,
+	cover,
+	top,
+	relative,
+	35rem,
+	35rem,
+	$box-shadow);
+}
+
+.member3 {
+	@include member(url("../img/Team/photo3.png") no-repeat,
+	cover,
+	top,
+	relative,
+	35rem,
+	35rem,
+	$box-shadow);
+}
+
+.member4 {
+	@include member(url("../img/Team/photo4.png") no-repeat,
+	cover,
+	top,
+	relative,
+	35rem,
+	35rem,
+	$box-shadow);
+}
+
+.member5 {
+	@include member(url("../img/Team/photo5.png") no-repeat,
+	cover,
+	top,
+	relative,
+	35rem,
+	35rem,
+	$box-shadow);
+}
+
+.bio {
+	width: 35rem;
 	font-family: $font-r;
 	font-weight: 100;
+	line-height: 1.2;
 	color: $white;
-	margin-bottom: 1rem;
+	& span {
+		margin-bottom: 2rem;
+	}
 }
 
 .line {
-	width: 30px;
-	height: 3px;
+	width: 5.5rem;
+	height: 0.6rem;
+	border-radius: 0.2rem;
 	background: $white;
 	display: block;
-	margin-bottom: 1rem;
 }
 
-.name {}
+.name {
+	font-size: 3.5rem;
+	display: inline-block;
+}
 
 .position {
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
-	opacity: (.8)
+	opacity: (.8);
+	display: inline-block;
 }
 
-.quote {}
+.quote {
+	font-size: 1.6rem;
+	display: inline-block;
+	padding-top: 2rem;
+}

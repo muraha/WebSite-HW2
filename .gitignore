@@ -10,3 +10,4 @@ dist
 package-lock.json
 /**/*.psd
 /**/.DS_Store
+.jsbeautifyrc

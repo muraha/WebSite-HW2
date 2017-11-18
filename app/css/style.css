@@ -134,7 +134,7 @@ header {
   position: relative; }
 
 .head-mask {
-  background-color: rgba(25, 30, 63, 0.749);
+  background-color: rgba(24, 29, 62, 0.749);
   position: absolute;
   left: 0;
   top: 0;
@@ -210,7 +210,7 @@ header {
     font-size: 2rem;
     cursor: pointer; }
 
-/*checked - unchecked states of burger*/
+/* checked - unchecked states of burger */
 .menu-change:not(:checked) ~ .burger span:first-child {
   -webkit-transition: 0.3s 0.05s linear;
   transition: 0.3s 0.05s linear; }
@@ -250,6 +250,16 @@ header {
   top: 50%;
   left: 50%; }
 
+.element-letter {
+  font-size: 100rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #141832;
+  opacity: 0.3;
+  text-align: left;
+  text-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.549);
+  margin-top: -10rem; }
+
 .mission {
   height: 100vh;
   max-width: 100vw;
@@ -276,7 +286,7 @@ header {
   box-shadow: 0 17.8rem 15.2rem 0 rgba(0, 0, 0, 0.451);
   width: 66rem;
   max-height: 63rem;
-  margin: 3rem 0 -3rem 0rem; }
+  margin: 3rem 0 -3rem 0; }
 
 .mission-text {
   font-size: 19px;
@@ -290,5 +300,59 @@ header {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
+
+.projects {
+  height: 100vh;
+  background-image: url("../img/Projects/projects background1.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+
+.projects-letter {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  overflow: hidden; }
+
+.project-logo-wrap {
+  max-width: 75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  z-index: 1;
+  padding-left: 2rem; }
+
+.p-allitems {
+  margin: 0 5rem 10rem 0;
+  width: 20rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.projects-number {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 5 10rem;
+  flex: 0 5 10rem;
+  margin-right: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

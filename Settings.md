@@ -1,26 +1,36 @@
 
 VSCode pref:
 {
-  "workbench.colorTheme": "Monokai",
-  "window.menuBarVisibility": "toggle",
-  "editor.minimap.enabled": false,
-  "editor.wordWrap": "on",
-  "workbench.startupEditor": "none",
-  "workbench.panel.location": "bottom",
-  "git.confirmSync": false,
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": false,
-    "strings": true
-  },
-  "editor.mouseWheelZoom": true,
-  "window.zoomLevel": -1,
-  "emmet.triggerExpansionOnTab": true,
-  /*lint+beautify*/
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  // "files.insertFinalNewline": true
+	"workbench.colorTheme": "Monokai",
+	"window.menuBarVisibility": "toggle",
+	"editor.minimap.enabled": false,
+	"editor.wordWrap": "on",
+	"workbench.startupEditor": "none",
+	"workbench.panel.location": "right",
+	"git.confirmSync": false,
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": false,
+		"strings": true
+	},
+	"editor.mouseWheelZoom": true,
+	"window.zoomLevel": -1,
+	"emmet.triggerExpansionOnTab": true,
+	/*lint+beautify*/
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"beautify.config": {
+		"indent_char": " ",
+		"indent_size": 2,
+		"css": {
+			"newline_between_rules": true,
+			"selector_separator_newline": true,
+			"space_around_combinator": true
+		},
+		"indent_with_tabs": true,
+		"end_with_newline": true
+	}
 }
 
 Beautify pref: .jsbeautifyrc file

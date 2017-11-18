@@ -303,10 +303,11 @@ header {
   flex: 1 1 auto; }
 
 .projects {
-  height: 100vh;
-  background-image: url("../img/Projects/projects background1.png");
+  height: 130vh;
+  background: url("../img/Projects/projects background1.png") no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
+  z-index: -1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,8 +322,7 @@ header {
 .projects-letter {
   position: absolute;
   top: 1%;
-  left: 5%;
-  overflow: hidden; }
+  left: 5%; }
 
 .project-logo-wrap {
   max-width: 75rem;
@@ -355,5 +355,32 @@ header {
   -ms-flex: 0 5 10rem;
   flex: 0 5 10rem;
   margin-right: 2rem; }
+
+.team {
+  position: relative; }
+
+.team-letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.bio:nth-child(n) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 1rem; }
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  display: block;
+  margin-bottom: 1rem; }
+
+.position {
+  margin-bottom: 1rem;
+  opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */

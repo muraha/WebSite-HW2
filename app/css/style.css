@@ -429,8 +429,7 @@ header {
 
 .line {
   width: 5.5rem;
-  height: 0.6rem;
-  border-radius: 0.2rem;
+  height: 0.5rem;
   background: white;
   display: block; }
 
@@ -441,7 +440,7 @@ header {
 .position {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  opacity: 0.8;
+  opacity: 0.5;
   display: inline-block; }
 
 .quote {

@@ -132,7 +132,8 @@ header {
   background: url("../img/Header/Layer.png") no-repeat;
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .head-mask {
   background-color: rgba(24, 29, 62, 0.749);
@@ -143,14 +144,9 @@ header {
   right: 0; }
 
 .header-logo {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  padding-top: 50px; }
-  .header-logo img {
-    width: 12rem; }
+  padding-top: 50px;
+  width: 12rem;
+  position: relative; }
 
 .header-moto {
   font-family: "Raleway", sans-serif;
@@ -162,7 +158,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  white-space: nowrap; }
+  width: 80%; }
 
 .nav {
   position: relative; }
@@ -202,8 +198,8 @@ header {
   align-items: center;
   overflow: hidden;
   height: 0;
-  -webkit-transition: height 0.3s linear;
-  transition: height 0.3s linear; }
+  -webkit-transition: height 0.1s linear;
+  transition: height 0.1s linear; }
   .nav ul li {
     position: relative;
     margin-bottom: 10px;
@@ -215,18 +211,18 @@ header {
 
 /* checked - unchecked states of burger */
 .menu-change:not(:checked) ~ .burger span:first-child {
-  -webkit-transition: 0.3s 0.05s linear;
-  transition: 0.3s 0.05s linear; }
+  -webkit-transition: 0.1s 0.05s linear;
+  transition: 0.1s 0.05s linear; }
 
 .menu-change:checked ~ .burger span:first-child {
   margin-bottom: 16rem;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear; }
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear; }
 
 .menu-change:checked ~ ul {
   height: 15rem;
-  -webkit-transition: 0.3s 0.05s linear;
-  transition: 0.3s 0.05s linear; }
+  -webkit-transition: 0.1s 0.05s linear;
+  transition: 0.1s 0.05s linear; }
 
 .element-number {
   display: inline-block; }
@@ -275,10 +271,12 @@ header {
   flex-flow: row nowrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .mission-number {
-  padding-top: 12rem;
   max-width: 25rem; }
 
 .mission-mountains {
@@ -287,8 +285,8 @@ header {
   background-position: center;
   -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
   box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  width: 66rem;
-  max-height: 63rem;
+  width: 66em;
+  height: 63em;
   margin: 3rem 0 -3rem 0; }
 
 .mission-text {
@@ -298,7 +296,7 @@ header {
   line-height: 1.2;
   text-align: left;
   max-width: 48rem;
-  padding-top: 24rem;
+  padding-top: 4rem;
   margin-left: -20rem;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -359,7 +357,10 @@ header {
   margin-right: 2rem; }
 
 .team {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .team-letter {
   position: absolute;
@@ -367,6 +368,16 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.team-members {
+  width: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
 
 .member1 {
   background: url("../img/Team/photo1.png") no-repeat;

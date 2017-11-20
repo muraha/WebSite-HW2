@@ -4,6 +4,7 @@ header {
 	background-size: cover;
 	background-position: top;
 	position: relative;
+	text-align: center;
 }
 
 .head-mask {
@@ -16,14 +17,9 @@ header {
 }
 
 .header-logo {
-	display: inline-block;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
 	padding-top: 50px;
-	& img {
-		width: 12rem;
-	}
+	width: 12rem;
+	position: relative;
 }
 
 .header-moto {
@@ -34,6 +30,6 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	white-space: nowrap;
+	transform: translate(-50%, -50%); // white-space: nowrap;
+	width: 80%;
 }

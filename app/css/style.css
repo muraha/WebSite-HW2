@@ -250,13 +250,13 @@ header {
   left: 50%; }
 
 .element-letter {
-  font-size: 100rem;
+  font-size: 120rem;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   color: #141832;
   opacity: 0.3;
   text-align: left;
-  text-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.549);
+  text-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.7);
   margin-top: -10rem; }
 
 .mission {
@@ -283,8 +283,8 @@ header {
   background: url("../img/Mission/mountains.png") no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
   width: 66em;
   height: 63em;
   margin: 3rem 0 -3rem 0; }
@@ -293,17 +293,16 @@ header {
   font-size: 19px;
   font-family: "Raleway", sans-serif;
   color: white;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: left;
-  max-width: 48rem;
   padding-top: 4rem;
   margin-left: -20rem;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 48rem;
+  flex: 0 1 48rem; }
 
 .projects {
-  height: 130vh;
+  height: 100vh;
   background: url("../img/Projects/projects background1.png") no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -321,8 +320,8 @@ header {
 
 .projects-letter {
   position: absolute;
-  top: 1%;
-  left: 5%; }
+  top: -10%;
+  left: 8%; }
 
 .project-logo-wrap {
   max-width: 75rem;
@@ -354,13 +353,24 @@ header {
   -webkit-box-flex: 0;
   -ms-flex: 0 5 10rem;
   flex: 0 5 10rem;
-  margin-right: 2rem; }
+  margin: 0 2rem 0 0; }
 
 .team {
-  position: relative;
+  position: relative; }
+
+.team-flex-wrap {
+  width: 65%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .team-letter {
   position: absolute;
@@ -369,8 +379,11 @@ header {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.team-number {
+  margin: 0 18rem 10rem 0; }
+
 .team-members {
-  width: 70rem;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,50 +397,83 @@ header {
   background-size: cover;
   background-position: top;
   position: relative;
-  width: 60rem;
-  height: 60rem;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451); }
+  width: 63rem;
+  height: 63rem;
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  margin: 0 12rem 15rem 0; }
+  .member1 .bio {
+    position: absolute;
+    left: -16rem;
+    bottom: 5%; }
 
 .member2 {
   background: url("../img/Team/photo2.png") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
-  width: 35rem;
-  height: 35rem;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451); }
+  width: 40rem;
+  height: 40rem;
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  -webkit-filter: contrast(92%);
+  filter: contrast(92%);
+  margin: 0 35rem 15rem 0; }
+  .member2 .bio {
+    position: absolute;
+    right: -29rem;
+    bottom: 15%; }
 
 .member3 {
   background: url("../img/Team/photo3.png") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
-  width: 35rem;
-  height: 35rem;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451); }
+  width: 40rem;
+  height: 40rem;
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  -webkit-filter: contrast(92%);
+  filter: contrast(92%);
+  margin-top: 13rem; }
+  .member3 .bio {
+    position: absolute;
+    left: -10rem;
+    bottom: 7%; }
 
 .member4 {
   background: url("../img/Team/photo4.png") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
-  width: 35rem;
-  height: 35rem;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451); }
+  width: 40rem;
+  height: 40rem;
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  -webkit-filter: contrast(95%);
+  filter: contrast(95%);
+  margin: 0 15rem 0 11rem; }
+  .member4 .bio {
+    position: absolute;
+    left: -10rem;
+    bottom: 7%; }
 
 .member5 {
   background: url("../img/Team/photo5.png") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
-  width: 35rem;
-  height: 35rem;
-  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451);
-  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.451); }
+  width: 40rem;
+  height: 40rem;
+  -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
+  -webkit-filter: contrast(92%);
+  filter: contrast(92%);
+  margin: 15rem 0 11rem 0; }
+  .member5 .bio {
+    position: absolute;
+    left: 23rem;
+    bottom: 7%; }
 
 .bio {
   width: 35rem;

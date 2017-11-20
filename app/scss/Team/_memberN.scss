@@ -5,7 +5,7 @@
 	position: $p;
 	width: $w;
 	height: $h;
-	box-shadow: $bsh
+	box-shadow: $bsh;
 }
 
 .member1 {
@@ -13,9 +13,15 @@
 	cover,
 	top,
 	relative,
-	60rem,
-	60rem,
+	63rem,
+	63rem,
 	$box-shadow);
+	margin: 0 12rem 15rem 0;
+	& .bio {
+		position: absolute;
+		left: -16rem;
+		bottom: 5%;
+	}
 }
 
 .member2 {
@@ -23,9 +29,16 @@
 	cover,
 	top,
 	relative,
-	35rem,
-	35rem,
+	40rem,
+	40rem,
 	$box-shadow);
+	filter: contrast(92%);
+	margin: 0 35rem 15rem 0;
+	& .bio {
+		position: absolute;
+		right: -29rem;
+		bottom: 15%;
+	}
 }
 
 .member3 {
@@ -33,9 +46,16 @@
 	cover,
 	top,
 	relative,
-	35rem,
-	35rem,
+	40rem,
+	40rem,
 	$box-shadow);
+	filter: contrast(92%);
+	margin-top: 13rem;
+	& .bio {
+		position: absolute;
+		left: -10rem;
+		bottom: 7%;
+	}
 }
 
 .member4 {
@@ -43,9 +63,16 @@
 	cover,
 	top,
 	relative,
-	35rem,
-	35rem,
+	40rem,
+	40rem,
 	$box-shadow);
+	filter: contrast(95%);
+	margin: 0 15rem 0 11rem;
+	& .bio {
+		position: absolute;
+		left: -10rem;
+		bottom: 7%;
+	}
 }
 
 .member5 {
@@ -53,9 +80,16 @@
 	cover,
 	top,
 	relative,
-	35rem,
-	35rem,
+	40rem,
+	40rem,
 	$box-shadow);
+	filter: contrast(92%);
+	margin: 15rem 0 11rem 0;
+	& .bio {
+		position: absolute;
+		left: 23rem;
+		bottom: 7%;
+	}
 }
 
 .bio {

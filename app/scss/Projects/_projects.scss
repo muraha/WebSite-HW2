@@ -1,39 +1,39 @@
 .projects {
-	height: 100vh;
-	background: url("../img/Projects/projects background1.png") no-repeat;
-	background-size: cover;
-	background-position: bottom;
-	z-index: -1;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
+  height: 100vh;
+  background: url("../img/Projects/projects background1.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .projects-letter {
-	position: absolute;
-	top: -10%;
-	left: 8%;
+  position: absolute;
+  top: -10%;
+  left: 8%;
 }
 
 .project-logo-wrap {
-	max-width: 75rem;
-	display: flex;
-	flex-flow: row wrap;
-	align-content: flex-start;
-	justify-content: flex-end;
-	z-index: 1;
-	padding-left: 2rem;
+  max-width: 75rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: flex-end;
+  z-index: 1;
+  padding-left: 2rem;
 }
 
 .p-allitems {
-	margin: 0 5rem 10rem 0;
-	width: 20rem;
-	flex: 0 1 auto;
-	align-self: flex-start;
+  margin: 0 5rem 10rem 0;
+  width: 20rem;
+  flex: 0 1 auto;
+  align-self: flex-start;
 }
 
 .projects-number {
-	flex: 0 5 10rem;
-	margin: 0 2rem 0 0;
+  flex: 0 5 10rem;
+  margin: 0 2rem 0 0;
 }

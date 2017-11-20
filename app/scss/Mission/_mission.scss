@@ -1,33 +1,33 @@
 .mission {
-	height: 100vh;
-	max-width: 100vw;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .mission-number {
-	max-width: 25rem;
+  max-width: 25rem;
 }
 
 .mission-mountains {
-	background: url("../img/Mission/mountains.png") no-repeat;
-	background-size: cover;
-	background-position: center;
-	box-shadow: $box-shadow;
-	width: 66em;
-	height: 63em;
-	margin: 3rem 0 -3rem 0;
+  background: url("../img/Mission/mountains.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: $box-shadow;
+  width: 66em;
+  height: 63em;
+  margin: 3rem 0 -3rem 0;
 }
 
 .mission-text {
-	font-size: 19px;
-	font-family: $font-r;
-	color: $white;
-	line-height: 1.3;
-	text-align: left;
-	padding-top: 4rem;
-	margin-left: -20rem;
-	flex: 0 1 48rem;
+  font-size: 19px;
+  font-family: $font-r;
+  color: $white;
+  line-height: 1.3;
+  text-align: left;
+  padding-top: 4rem;
+  margin-left: -20rem;
+  flex: 0 1 48rem;
 }

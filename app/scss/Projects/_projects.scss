@@ -1,8 +1,9 @@
 .projects {
 	height: 100vh;
-	background-image: url("../img/Projects/projects background1.png");
+	background: url("../img/Projects/projects background1.png") no-repeat;
 	background-size: cover;
-	background-position: top;
+	background-position: bottom;
+	z-index: -1;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -11,9 +12,8 @@
 
 .projects-letter {
 	position: absolute;
-	top: 1%;
-	left: 5%;
-	overflow: hidden;
+	top: -10%;
+	left: 8%;
 }
 
 .project-logo-wrap {
@@ -35,5 +35,5 @@
 
 .projects-number {
 	flex: 0 5 10rem;
-	margin-right: 2rem;
+	margin: 0 2rem 0 0;
 }

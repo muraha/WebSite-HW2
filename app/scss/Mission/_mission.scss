@@ -4,10 +4,10 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
+	align-items: center;
 }
 
 .mission-number {
-	padding-top: 12rem;
 	max-width: 25rem;
 }
 
@@ -16,8 +16,8 @@
 	background-size: cover;
 	background-position: center;
 	box-shadow: $box-shadow;
-	width: 66rem;
-	max-height: 63rem;
+	width: 66em;
+	height: 63em;
 	margin: 3rem 0 -3rem 0;
 }
 
@@ -25,10 +25,9 @@
 	font-size: 19px;
 	font-family: $font-r;
 	color: $white;
-	line-height: 1.2;
+	line-height: 1.3;
 	text-align: left;
-	max-width: 48rem;
-	padding-top: 24rem;
+	padding-top: 4rem;
 	margin-left: -20rem;
-	flex: 1 1 auto;
+	flex: 0 1 48rem;
 }

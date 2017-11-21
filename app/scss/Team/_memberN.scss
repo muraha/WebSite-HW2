@@ -16,7 +16,7 @@
   63rem,
   63rem,
   $box-shadow);
-  margin: 0 12rem 15rem 0;
+  margin: -1rem 12rem 15rem 0;
   & .bio {
     position: absolute;
     left: -16rem;
@@ -84,7 +84,7 @@
   40rem,
   $box-shadow);
   filter: contrast(92%);
-  margin: 15rem 0 11rem 0;
+  margin: 15rem 0 11rem;
   & .bio {
     position: absolute;
     left: 23rem;

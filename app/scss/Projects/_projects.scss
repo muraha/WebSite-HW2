@@ -1,9 +1,8 @@
 .projects {
   height: 100vh;
-  background: url("../img/Projects/projects background1.png") no-repeat;
+  background: url("../img/Projects/projects background.png") top no-repeat, $blue;
+  background-blend-mode: color-dodge;
   background-size: cover;
-  background-position: bottom;
-  z-index: -1;
   position: relative;
   display: flex;
   justify-content: center;

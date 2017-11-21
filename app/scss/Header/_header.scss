@@ -1,12 +1,18 @@
+body {
+  background: url("../img/Header/Layer.png") no-repeat, $blue-mask;
+  background-blend-mode: darken;
+  background-size: contain;
+  background-position: top;
+}
+
 header {
   height: 100vh;
-  background: url("../img/Header/Layer.png") no-repeat;
-  background-size: cover;
-  background-position: top;
   position: relative;
   text-align: center;
 }
 
+
+/*
 .head-mask {
   background-color: $blue-mask;
   position: absolute;
@@ -15,6 +21,7 @@ header {
   bottom: 0;
   right: 0;
 }
+*/
 
 .header-logo {
   padding-top: 50px;
@@ -23,10 +30,7 @@ header {
 }
 
 .header-moto {
-  font-family: $font-r;
-  font-weight: 100;
-  font-size: 7rem;
-  color: $white;
+  @extend h1;
   position: absolute;
   top: 50%;
   left: 50%;

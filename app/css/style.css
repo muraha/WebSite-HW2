@@ -6,6 +6,7 @@ applet,
 object,
 iframe,
 h1,
+.header-moto,
 h2,
 h3,
 h4,
@@ -122,37 +123,56 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/**/
+/* _ */
 html {
-  background-color: #191e3f;
+  background-color: #181d3e;
   font-size: 62.5%; }
+
+h1, .header-moto,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 7rem;
+  color: white;
+  margin-bottom: 3rem; }
+
+.text, .mission-text, .event-text {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  line-height: 1.3; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+body {
+  background: url("../img/Header/Layer.png") no-repeat, rgba(24, 29, 62, 0.749);
+  background-blend-mode: darken;
+  background-size: contain;
+  background-position: top; }
 
 header {
   height: 100vh;
-  background: url("../img/Header/Layer.png") no-repeat;
-  background-size: cover;
-  background-position: top;
   position: relative;
   text-align: center; }
 
+/* 
 .head-mask {
-  background-color: rgba(24, 29, 62, 0.749);
+  background-color: $blue-mask;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  right: 0; }
-
+  right: 0;
+}
+*/
 .header-logo {
   padding-top: 50px;
   width: 12rem;
   position: relative; }
 
 .header-moto {
-  font-family: "Raleway", sans-serif;
-  font-weight: 100;
-  font-size: 7rem;
-  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -162,9 +182,6 @@ header {
 
 .nav {
   position: relative; }
-  .nav a {
-    color: inherit;
-    text-decoration: none; }
 
 .burger {
   position: absolute;
@@ -231,21 +248,21 @@ header {
   position: relative;
   font-size: 30rem;
   font-family: "Yantramanav", sans-serif;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.025);
   line-height: 1.2;
-  letter-spacing: -2rem;
-  -webkit-transform: scaleY(0.95);
-  transform: scaleY(0.95); }
+  letter-spacing: -1rem;
+  -webkit-transform: scaleX(0.95);
+  transform: scaleX(0.95); }
 
 .element-number-label {
   position: absolute;
   font-size: 1.9rem;
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: lightgray;
   line-height: 1.2;
   letter-spacing: 0;
-  -webkit-transform: rotate(-90deg) scale(1.8) translate(20%, -70%);
-  transform: rotate(-90deg) scale(1.8) translate(20%, -70%);
+  -webkit-transform: rotate(-90deg) scale(1.8) translate(20%, -65%);
+  transform: rotate(-90deg) scale(1.8) translate(20%, -65%);
   top: 50%;
   left: 50%; }
 
@@ -277,7 +294,7 @@ header {
   align-items: center; }
 
 .mission-number {
-  max-width: 25rem; }
+  max-width: 26rem; }
 
 .mission-mountains {
   background: url("../img/Mission/mountains.png") no-repeat;
@@ -287,26 +304,22 @@ header {
   box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
   width: 66em;
   height: 63em;
-  margin: 3rem 0 -3rem 0; }
+  z-index: 1; }
 
 .mission-text {
-  font-size: 19px;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  line-height: 1.3;
   text-align: left;
   padding-top: 4rem;
-  margin-left: -20rem;
+  margin-left: -15rem;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 48rem;
-  flex: 0 1 48rem; }
+  flex: 0 1 48rem;
+  z-index: 1; }
 
 .projects {
   height: 100vh;
-  background: url("../img/Projects/projects background1.png") no-repeat;
+  background: url("../img/Projects/projects background.png") top no-repeat, #181d3e;
+  background-blend-mode: color-dodge;
   background-size: cover;
-  background-position: bottom;
-  z-index: -1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,7 +414,7 @@ header {
   height: 63rem;
   -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
   box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
-  margin: 0 12rem 15rem 0; }
+  margin: -1rem 12rem 15rem 0; }
   .member1 .bio {
     position: absolute;
     left: -16rem;
@@ -504,5 +517,80 @@ header {
   font-size: 1.6rem;
   display: inline-block;
   padding-top: 2rem; }
+
+.event {
+  position: relative;
+  text-align: center; }
+
+.event-letter {
+  position: absolute;
+  right: 13%;
+  -webkit-filter: brightness(150%) saturate(80%);
+  filter: brightness(150%) saturate(80%); }
+
+.event-number {
+  display: inline-block;
+  margin: 3rem auto; }
+
+.event-text {
+  text-align: left;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.item {
+  width: 50rem; }
+
+.footer {
+  height: 100vh;
+  background: url("../img/Event/events background.png") top no-repeat, #181d3e;
+  background-blend-mode: color-dodge;
+  background-size: cover; }
+
+.footer-flex {
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.footer-logo {
+  width: 8.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.2; }
+
+.links {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  opacity: 0.4;
+  margin-bottom: 2rem;
+  text-decoration: underline; }
+
+.links a:not(:last-child) {
+  margin-right: 2rem; }
+
+.copyrights {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  color: white;
+  opacity: 0.4; }
 
 /*# sourceMappingURL=style.css.map */

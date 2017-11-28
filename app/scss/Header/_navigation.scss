@@ -1,61 +1,61 @@
 .nav {
-  position: relative;
+	position: relative;
 }
 
 .burger {
-  position: absolute;
-  top: -4rem;
-  right: 10%;
-  width: 4rem;
-  cursor: pointer;
-  & span {
-    width: 100%;
-    height: 0.3rem;
-    border-radius: 0.2rem;
-    background: $white;
-    display: block;
-    margin: 0.7rem 0;
-  }
+	position: absolute;
+	top: -4rem;
+	right: 10%;
+	width: 4rem;
+	cursor: pointer;
+	& span {
+		width: 100%;
+		height: 0.3rem;
+		border-radius: 0.2rem;
+		background: $white;
+		display: block;
+		margin: 0.7rem 0;
+	}
 }
 
 .nav ul {
-  position: absolute;
-  top: -2rem;
-  right: 10%;
-  transform: translateX(1.5rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  height: 0;
-  transition: (height) 0.1s linear;
-  & li {
-    position: relative;
-    margin-bottom: 10px;
-    color: $white;
-    font-family: $font-r;
-    font-weight: 100;
-    font-size: 2rem;
-    cursor: pointer;
-  }
+	position: absolute;
+	top: -2rem;
+	right: 10%;
+	transform: translateX(1.5rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	height: 0;
+	transition: (height) 0.1s linear;
+	& li {
+		position: relative;
+		margin-bottom: 10px;
+		color: $white;
+		font-family: $font-r;
+		font-weight: 100;
+		font-size: 2rem;
+		cursor: pointer;
+	}
 }
 
 
 /* checked - unchecked states of burger */
 
 .menu-change:not(:checked) {
-  & ~ .burger span:first-child {
-    transition: 0.1s 0.05s linear;
-  }
+	& ~ .burger span:first-child {
+		transition: 0.1s 0.05s linear;
+	}
 }
 
 .menu-change:checked {
-  & ~ .burger span:first-child {
-    margin-bottom: 16rem;
-    transition: 0.1s linear;
-  }
-  & ~ ul {
-    height: 15rem;
-    transition: 0.1s 0.05s linear;
-  }
+	& ~ .burger span:first-child {
+		margin-bottom: 16rem;
+		transition: 0.1s linear;
+	}
+	& ~ ul {
+		height: 15rem;
+		transition: 0.1s 0.05s linear;
+	}
 }

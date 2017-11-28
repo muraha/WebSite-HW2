@@ -1,25 +1,24 @@
 .element-number {
-  display: inline-block;
+	position: relative;
 }
 
 .element-number-num {
-  position: relative;
-  font-size: 30rem;
-  font-family: $font-y;
-  color: rgba(255, 255, 255, 0.025);
-  line-height: 1.2;
-  letter-spacing: -1rem;
-  transform: scaleX(0.95);
+	font-size: 30rem;
+	font-family: $font-y;
+	color: rgba(255, 255, 255, 0.025);
+	line-height: 1.2;
+	letter-spacing: -1rem;
+	transform: scaleX(0.95);
 }
 
 .element-number-label {
-  position: absolute;
-  font-size: 1.9rem;
-  font-family: $font-r;
-  color: rgb(211, 211, 211);
-  line-height: 1.2;
-  letter-spacing: 0;
-  transform: rotate(-90deg) scale(1.8) translate(20%, -65%);
-  top: 50%;
-  left: 50%;
+	position: absolute;
+	font-size: 1.9rem;
+	font-family: $font-r;
+	color: rgb(211, 211, 211);
+	line-height: 1.2;
+	letter-spacing: 0;
+	transform: rotate(-90deg) scale(1.8) translate(20%, -65%);
+	top: 50%;
+	left: 50%;
 }

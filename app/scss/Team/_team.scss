@@ -1,28 +1,28 @@
 .team {
-  position: relative;
+	position: relative;
 }
 
 .team-flex-wrap {
-  width: 65%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+	width: 65%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 .team-letter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .team-number {
-  margin: 0 18rem 10rem 0;
+	margin: -7rem 18rem 10rem 0;
 }
 
 .team-members {
-  width: 95%;
-  display: flex;
-  flex-flow: row wrap;
+	width: 95%;
+	display: flex;
+	flex-flow: row wrap;
 }

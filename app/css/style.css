@@ -83,8 +83,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -128,8 +128,7 @@ html {
   background-color: #181d3e;
   font-size: 62.5%; }
 
-h1, .header-moto,
-h2 {
+h1, .header-moto {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-size: 7rem;
@@ -152,12 +151,22 @@ body {
   background-size: contain;
   background-position: top; }
 
+.projects-team-bg {
+  background: url("../img/Projects/projects background.png") top no-repeat, #181d3e;
+  background-blend-mode: color-dodge;
+  background-size: contain; }
+
+.event-footer-bg {
+  background: url("../img/Event/events background.png") top no-repeat, #181d3e;
+  background-blend-mode: color-dodge;
+  background-size: cover; }
+
 header {
   height: 100vh;
   position: relative;
   text-align: center; }
 
-/* 
+/*
 .head-mask {
   background-color: $blue-mask;
   position: absolute;
@@ -242,10 +251,9 @@ header {
   transition: 0.1s 0.05s linear; }
 
 .element-number {
-  display: inline-block; }
+  position: relative; }
 
 .element-number-num {
-  position: relative;
   font-size: 30rem;
   font-family: "Yantramanav", sans-serif;
   color: rgba(255, 255, 255, 0.025);
@@ -317,9 +325,6 @@ header {
 
 .projects {
   height: 100vh;
-  background: url("../img/Projects/projects background.png") top no-repeat, #181d3e;
-  background-blend-mode: color-dodge;
-  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +334,8 @@ header {
   justify-content: center;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
-  align-items: baseline; }
+  align-items: baseline;
+  margin-bottom: 5rem; }
 
 .projects-letter {
   position: absolute;
@@ -393,7 +399,7 @@ header {
   transform: translate(-50%, -50%); }
 
 .team-number {
-  margin: 0 18rem 10rem 0; }
+  margin: -7rem 18rem 10rem 0; }
 
 .team-members {
   width: 95%;
@@ -414,11 +420,11 @@ header {
   height: 63rem;
   -webkit-box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
   box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
-  margin: -1rem 12rem 15rem 0; }
+  margin: 2rem 12rem 15rem 0; }
   .member1 .bio {
     position: absolute;
     left: -16rem;
-    bottom: 5%; }
+    bottom: 9%; }
 
 .member2 {
   background: url("../img/Team/photo2.png") no-repeat;
@@ -435,7 +441,7 @@ header {
   .member2 .bio {
     position: absolute;
     right: -29rem;
-    bottom: 15%; }
+    bottom: 25%; }
 
 .member3 {
   background: url("../img/Team/photo3.png") no-repeat;
@@ -452,7 +458,7 @@ header {
   .member3 .bio {
     position: absolute;
     left: -10rem;
-    bottom: 7%; }
+    bottom: 13%; }
 
 .member4 {
   background: url("../img/Team/photo4.png") no-repeat;
@@ -469,7 +475,7 @@ header {
   .member4 .bio {
     position: absolute;
     left: -10rem;
-    bottom: 7%; }
+    bottom: 13%; }
 
 .member5 {
   background: url("../img/Team/photo5.png") no-repeat;
@@ -482,43 +488,41 @@ header {
   box-shadow: 0 17.8rem 15.2rem rgba(0, 0, 0, 0.337);
   -webkit-filter: contrast(92%);
   filter: contrast(92%);
-  margin: 15rem 0 11rem 0; }
+  margin: 15rem 0 11rem; }
   .member5 .bio {
     position: absolute;
     left: 23rem;
-    bottom: 7%; }
+    bottom: 13%; }
 
 .bio {
-  width: 35rem;
+  width: 34.5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   line-height: 1.2;
-  color: white; }
-  .bio span {
-    margin-bottom: 2rem; }
+  color: white;
+  word-break: normal; }
 
 .line {
   width: 5.5rem;
   height: 0.5rem;
   background: white;
-  display: block; }
+  display: block;
+  margin-bottom: 2rem; }
 
 .name {
   font-size: 3.5rem;
-  display: inline-block; }
+  margin-bottom: 1rem; }
 
 .position {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  opacity: 0.5;
-  display: inline-block; }
+  opacity: 0.5; }
 
 .quote {
   font-size: 1.6rem;
-  display: inline-block;
-  padding-top: 2rem; }
+  padding-top: 3rem; }
 
 .event {
+  height: 100vh;
   position: relative;
   text-align: center; }
 
@@ -545,27 +549,11 @@ header {
 .item {
   width: 50rem; }
 
-.footer {
-  height: 100vh;
-  background: url("../img/Event/events background.png") top no-repeat, #181d3e;
-  background-blend-mode: color-dodge;
-  background-size: cover; }
-
-.footer-flex {
-  height: 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+.footer-wrap {
+  text-align: center;
+  padding-top: 30rem;
+  position: relative;
+  margin-bottom: 10rem; }
 
 .footer-logo {
   width: 8.5rem;

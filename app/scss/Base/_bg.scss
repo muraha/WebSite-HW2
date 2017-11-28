@@ -1,0 +1,18 @@
+body {
+	background: url("../img/Header/Layer.png") no-repeat, $blue-mask;
+	background-blend-mode: darken;
+	background-size: contain;
+	background-position: top;
+}
+
+.projects-team-bg {
+	background: url("../img/Projects/projects background.png") top no-repeat, $blue;
+	background-blend-mode: color-dodge;
+	background-size: contain;
+}
+
+.event-footer-bg {
+	background: url("../img/Event/events background.png") top no-repeat, $blue;
+	background-blend-mode: color-dodge;
+	background-size: cover;
+}

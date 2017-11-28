@@ -1,129 +1,125 @@
 @mixin member($b, $bs, $bp, $p, $w, $h, $bsh) {
-  background: $b;
-  background-size: $bs;
-  background-position: $bp;
-  position: $p;
-  width: $w;
-  height: $h;
-  box-shadow: $bsh;
+	background: $b;
+	background-size: $bs;
+	background-position: $bp;
+	position: $p;
+	width: $w;
+	height: $h;
+	box-shadow: $bsh;
 }
 
 .member1 {
-  @include member(url("../img/Team/photo1.png") no-repeat,
-  cover,
-  top,
-  relative,
-  63rem,
-  63rem,
-  $box-shadow);
-  margin: -1rem 12rem 15rem 0;
-  & .bio {
-    position: absolute;
-    left: -16rem;
-    bottom: 5%;
-  }
+	@include member(url("../img/Team/photo1.png") no-repeat,
+	cover,
+	top,
+	relative,
+	63rem,
+	63rem,
+	$box-shadow);
+	margin: 2rem 12rem 15rem 0;
+	& .bio {
+		position: absolute;
+		left: -16rem;
+		bottom: 9%;
+	}
 }
 
 .member2 {
-  @include member(url("../img/Team/photo2.png") no-repeat,
-  cover,
-  top,
-  relative,
-  40rem,
-  40rem,
-  $box-shadow);
-  filter: contrast(92%);
-  margin: 0 35rem 15rem 0;
-  & .bio {
-    position: absolute;
-    right: -29rem;
-    bottom: 15%;
-  }
+	@include member(url("../img/Team/photo2.png") no-repeat,
+	cover,
+	top,
+	relative,
+	40rem,
+	40rem,
+	$box-shadow);
+	filter: contrast(92%);
+	margin: 0 35rem 15rem 0;
+	& .bio {
+		position: absolute;
+		right: -29rem;
+		bottom: 25%;
+	}
 }
 
 .member3 {
-  @include member(url("../img/Team/photo3.png") no-repeat,
-  cover,
-  top,
-  relative,
-  40rem,
-  40rem,
-  $box-shadow);
-  filter: contrast(92%);
-  margin-top: 13rem;
-  & .bio {
-    position: absolute;
-    left: -10rem;
-    bottom: 7%;
-  }
+	@include member(url("../img/Team/photo3.png") no-repeat,
+	cover,
+	top,
+	relative,
+	40rem,
+	40rem,
+	$box-shadow);
+	filter: contrast(92%);
+	margin-top: 13rem;
+	& .bio {
+		position: absolute;
+		left: -10rem;
+		bottom: 13%;
+	}
 }
 
 .member4 {
-  @include member(url("../img/Team/photo4.png") no-repeat,
-  cover,
-  top,
-  relative,
-  40rem,
-  40rem,
-  $box-shadow);
-  filter: contrast(95%);
-  margin: 0 15rem 0 11rem;
-  & .bio {
-    position: absolute;
-    left: -10rem;
-    bottom: 7%;
-  }
+	@include member(url("../img/Team/photo4.png") no-repeat,
+	cover,
+	top,
+	relative,
+	40rem,
+	40rem,
+	$box-shadow);
+	filter: contrast(95%);
+	margin: 0 15rem 0 11rem;
+	& .bio {
+		position: absolute;
+		left: -10rem;
+		bottom: 13%;
+	}
 }
 
 .member5 {
-  @include member(url("../img/Team/photo5.png") no-repeat,
-  cover,
-  top,
-  relative,
-  40rem,
-  40rem,
-  $box-shadow);
-  filter: contrast(92%);
-  margin: 15rem 0 11rem;
-  & .bio {
-    position: absolute;
-    left: 23rem;
-    bottom: 7%;
-  }
+	@include member(url("../img/Team/photo5.png") no-repeat,
+	cover,
+	top,
+	relative,
+	40rem,
+	40rem,
+	$box-shadow);
+	filter: contrast(92%);
+	margin: 15rem 0 11rem;
+	& .bio {
+		position: absolute;
+		left: 23rem;
+		bottom: 13%;
+	}
 }
 
 .bio {
-  width: 35rem;
-  font-family: $font-r;
-  font-weight: 100;
-  line-height: 1.2;
-  color: $white;
-  & span {
-    margin-bottom: 2rem;
-  }
+	width: 34.5rem;
+	font-family: $font-r;
+	font-weight: 100;
+	line-height: 1.2;
+	color: $white;
+	word-break: normal;
 }
 
 .line {
-  width: 5.5rem;
-  height: 0.5rem;
-  background: $white;
-  display: block;
+	width: 5.5rem;
+	height: 0.5rem;
+	background: $white;
+	display: block;
+	margin-bottom: 2rem;
 }
 
 .name {
-  font-size: 3.5rem;
-  display: inline-block;
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
 }
 
 .position {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  opacity: (.5);
-  display: inline-block;
+	font-size: 1.8rem;
+	opacity: (.5);
 }
 
 .quote {
-  font-size: 1.6rem;
-  display: inline-block;
-  padding-top: 2rem;
+	font-size: 1.6rem;
+	padding-top: 3rem;
 }
